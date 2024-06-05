@@ -112,9 +112,10 @@ def read_properties():
         print(f"Executing query: {select_query}")
         cursor.execute(select_query)
         properties = cursor.fetchall()
-        return properties
         for property in properties:
             print(property)
+        return properties
+      
 
     except Exception as error:
         print(f"Error reading properties: {error}")
