@@ -37,7 +37,7 @@ def scrape():
             continue
         SlNo, Name, Mileage, Price=prop
             
-        sample.append({"no.": SlNo, "name": Name, "mileage": Mileage, "price": Price})  
+        sample.append({"sr": SlNo, "name": Name, "mileage": Mileage, "price": Price})  
 
 
     
